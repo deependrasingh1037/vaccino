@@ -1,0 +1,86 @@
+{% extends "base_generic.html" %}
+
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/register.css' %}">  
+{% endblock %}
+
+{% block page %}
+PROFILE
+{% endblock%}
+
+{% block content %}  
+   <div class="wrapper">
+      <div class="heading"> VACCINATION DETAILS </div>
+
+         <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <div class="label">REFERENCE ID</div>
+            <div class="h6 text-muted">(as mentioned in certificate)</div>
+            <div class="input-group mb-3">
+               {{vacc_form.reference_id}}
+               <div class="input-group-append">
+                  <span class="input-group-text">
+                  <div class="material-icons" style="font-size: 30px;">pin</div>
+                  </span>
+               </div>
+            </div>
+
+            <div class="label">VACCINE NAME</div>
+            <div class="input-group mb-3">
+               {{vacc_form.vaccine_name}}
+               <div class="input-group-append">
+                  <span class="input-group-text">
+                  <div class="material-icons" style="font-size: 30px; width:30px"><span class="material-icons">vaccines</span></div>
+                  </span>
+               </div>
+            </div>
+
+            <div class="label">DOSE TAKEN</div>
+            <div class="input-group mb-3">
+               {{vacc_form.dose_taken}}
+               <div class="input-group-append">
+                  <span class="input-group-text">
+                  <div class="material-icons" style="font-size: 30px;">pin</div>
+                  </span>
+               </div>
+            </div>
+
+            <div class="label">DATE OF DOSE 1</div>
+            <div class="input-group mb-3">
+               {{vacc_form.date1}}
+               <div class="input-group-append">
+                  <span class="input-group-text">
+                  <div class="material-icons" style="font-size: 30px;">date_range</div>
+                  </span>
+               </div>
+            </div>
+
+            <div class="label">DATE OF DOSE 2</div>
+            <div class="input-group mb-5">
+               {{vacc_form.date2}}
+               <div class="input-group-append">
+                  <span class="input-group-text">
+                  <div class="material-icons" style="font-size: 30px;">date_range</div>
+                  </span>
+               </div>
+            </div>
+
+            <div class="label">VACCINATION CERTIFICATE</div>
+            <div class="instruction">File should be in PDF format </div>
+            <div class="input-group mb-3 d-flex flex-column">
+               {{vacc_form.certificate}}
+            </div>
+             
+            {{vacc_form.errors}}
+
+            <div class="d-flex justify-content-center mt-5 login_container">
+            <input class="btn login_btn" type="submit" value="Add details">
+            </div>
+
+         </form>
+
+   </div>
+
+{% endblock %}

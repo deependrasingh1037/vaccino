@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Montserrat:ital,wght@1,500&family=Titillium+Web:wght@600;700&display=swap');
+
+.wrapper {
+   background-color: white;
+   margin: 50px auto;
+   max-width: 600px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 8px;
+   border-radius: 10px;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#covid {
+    max-width: 400px;
+}
+
+.heading {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0a98c7;
+}
+
+.label {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+}
+
+.input-group-text {
+    background: rgb(51, 51, 51);
+    color: white;
+    border-color: rgba(0, 0, 0, 0.24);
+}
+
+.login_btn {
+    font-size: 22px;
+    width: 100%;
+    background: #0a98c7;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.login_btn:hover {
+    font-weight: 500;   
+    color: white;
+}
+
+#id_first_name, #id_last_name, #id_email, #id_username, #id_password1, 
+#id_password2, #id_roll_no, #id_branch, #id_program, #id_year, #id_age,
+#id_gender, #id_reference_id, #id_vaccine_name, #id_dose_taken, #id_date1,
+#id_date2, #id_certificate{
+    width: 300px;
+}
+
+@media only screen and (max-width: 500px) {
+    #id_first_name, #id_last_name, #id_email, #id_username, #id_password1, 
+    #id_password2, #id_roll_no, #id_branch, #id_program, #id_year, #id_age,
+    #id_gender, #id_reference_id, #id_vaccine_name, #id_dose_taken, #id_date1,
+    #id_date2, #id_certificate{
+        width: 185px;
+    }  
+}
+
+#certificate-clear_id, label{
+    display: none;
+}
+
+input[type="checkbox"] {
+    height: 25px;
+    width: 30px;
+}
+
+
+
+#id_date {
+    width: 150px;
+}
+
+input[type=file]::file-selector-button {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+  
+input[type=file]::file-selector-button:hover {
+    font-weight: bold ;
+}
+
+input[type=file] {
+    color: #757575;
+    align-self:auto;
+}
+
+.instruction {
+    color: rgba(46, 46, 46, 0.685);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.bottom{
+    text-align: center;
+    font-size: 17px;
+    color: rgba(51, 51, 51, 0.733);
+    font-weight: 500;
+}
