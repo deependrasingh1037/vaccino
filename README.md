@@ -12,8 +12,3 @@ inside the campus to control the corona outbreak✨
 - Run `python manage.py migrate` to apply migrations.
 - To connect database to MySQL Client run command `pip install mysqlclient`
 - Start the development server using `python manage.py runserver`.
-
-## Contributors
-
-ASHLESHA DIXIT [@sakshi-2412](https://github.com/sakshi-2412)   
-DEBARATI BANDOPADHYAY [@debarati-06](https://github.com/debarati-06)
